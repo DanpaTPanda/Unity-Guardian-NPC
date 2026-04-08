@@ -10,7 +10,7 @@ public class GuardianNPC : MonoBehaviour
     public float followDistance = 4.0f; // how close is too close?
 
     [Header("Timer Stuff")]
-    private float timeRemaining = 180.0f; // 3 mins, don't ask me to do the math again
+    private float timeRemaining = 180.0f; // 3 mins, don't ask me why 3 sounds good
     private bool isActive = true;
 
     private NavMeshAgent agent;
@@ -25,7 +25,7 @@ public class GuardianNPC : MonoBehaviour
 
     void Update()
     {
-        // if time's up, he just stands there. lazy.
+        // if time's up, he just stands there. lazy. u can change it to do anything else = like it vanish into water lol
         if (!isActive) return;
 
         HandleCountdown();
@@ -68,7 +68,7 @@ public class GuardianNPC : MonoBehaviour
         Debug.Log("3 mins are up. i'm done.");
         
         // if u want him to puff into smoke or walk away, do it here. 
-        // i'm just making him stop for now lol.
+        // i'm just making him stop for now so it will just stay still 
     }
 
     private void EnsureInvincibility()
