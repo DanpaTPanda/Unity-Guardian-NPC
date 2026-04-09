@@ -1,4 +1,7 @@
 # 🛡️ Unity-Stalker-NPC (Gag Character)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+---
 
 This repository contains a custom script for a random Non-Player Character (NPC) that just aggressively follows the player around for the gag effect. It uses Unity's NavMesh system, has a hard-coded 3-minute timer, and is completely invincible just to be annoying.
 
